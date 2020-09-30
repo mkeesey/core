@@ -50,7 +50,7 @@ class CanaryAlarm(CoordinatorEntity, AlarmControlPanelEntity):
     def __init__(self, coordinator, location):
         """Initialize a Canary security camera."""
         super().__init__(coordinator)
-        self._location_id = location.id
+        self._location_id = location.location_id
         self._location_name = location.name
 
     @property
