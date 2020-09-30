@@ -65,7 +65,7 @@ async def async_setup_entry(
                     CanaryCamera(
                         hass,
                         coordinator,
-                        location.id,
+                        location.location_id,
                         device,
                         DEFAULT_TIMEOUT,
                         ffmpeg_arguments,
